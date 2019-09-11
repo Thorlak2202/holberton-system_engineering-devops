@@ -1,1 +1,3 @@
-## here we can see hoy this command works
+##COMMAND UTILITY
+
+### pwd PRINTS THE WORKING DIRECTORY
