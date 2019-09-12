@@ -1,2 +1,2 @@
 #!/bin/bash
-emacs 0753 hello
+chmod 753 hello
