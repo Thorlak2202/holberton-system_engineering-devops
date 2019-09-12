@@ -1,6 +1,6 @@
 #COMMAND UTILITY!
 
-#pwd PRINTS THE WORKING DIRECTORY!
+###pwd PRINTS THE WORKING DIRECTORY!
 #ls  LISTS THE CONTENTS OF THE CURRENT DIRECTORY!
 #cd  navigates to /HOME directory!
 #ls -l  lists the contents of the current directory in the long format!
