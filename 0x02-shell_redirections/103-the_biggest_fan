@@ -1,2 +1,2 @@
 #!/bin/bash
-tail -11 | sort -r -k7 | cut -f 1
+cut -f1 nasa_19950801.tsv | LC_ALL=C sort | uniq -c | LC_ALL=C sort -r | head -11 | cut -d' ' -f6
