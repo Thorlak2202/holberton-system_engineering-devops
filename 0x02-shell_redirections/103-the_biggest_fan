@@ -1,2 +1,2 @@
 #!/bin/bash
-head -12 | tail -11 | sort -r -k7,3 | cut -f 1
+tail -11 | sort -r -k7,3 | cut -f 1
