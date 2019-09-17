@@ -1,2 +1,2 @@
 #!/bin/bash
-cut -f1 | LC_ALL=C sort | uniq -c | LC_ALL=C sort -r | head -11 | cut -d' ' -f6 |rev| tr -d ' '|rev
+tail -n+2 file3.tsv | cut -f1 | LC_ALL=C sort | uniq -c | cut -f2 | LC_ALL=C sort -r | head -13 | rev | cut -d' ' -f1 | rev | tr -d " /t"
