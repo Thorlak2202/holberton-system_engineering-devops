@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
-ps aux | grep -i bash
+# This shows bash PID
 # shellcheck disable=SC2009
+ps aux | grep -i bash
