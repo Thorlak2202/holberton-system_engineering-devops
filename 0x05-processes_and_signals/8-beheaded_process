@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# This beheads duncan mcloud.
+pkill -SIGKILL -f highlander
