@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 # instalation of Nginx
-sudo apt-get -y install Nginx
-sudo ufw allow 'Nginx HTTP'
-sudo chmod u+w index.nginx-debian.html
-echo 'Holberton School' > '/var/www/html/index.nginx-debian.html'
-sudo systemctl restart nginx
+apt-get update
+apt-get -y install Nginx
+ufw allow 'Nginx HTTP'
+chmod u+w index.nginx-debian.html
+echo 'Holberton School' > /var/www/html/index.nginx-debian.html
+service nginx start
