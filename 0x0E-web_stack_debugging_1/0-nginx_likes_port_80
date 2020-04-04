@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Nginx must be running, and listening on port 80
-# of all the server’s active IPv4 IPs 
+# of all the server’s  active IPv4 IPs 
 apt-get -y update
 apt-get -y install Nginx
 ufw allow 'Nginx HTTP'
