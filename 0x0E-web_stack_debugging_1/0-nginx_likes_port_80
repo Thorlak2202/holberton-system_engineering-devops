@@ -4,5 +4,5 @@
 apt-get -y update
 apt-get -y install Nginx
 ufw allow 'Nginx HTTP'
-sed -1 's/800/80/g' /etc/nginx/sites-enabled/default
-service nginx start
+sed -i 's/8080/80/g' /etc/nginx/sites-enabled/default
+sudo service nginx restart
