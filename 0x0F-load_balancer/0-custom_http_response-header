@@ -3,6 +3,6 @@
 #shellcheck disable=SC2154
 sudo apt-get update
 sudo apt-get -y install nginx
-sudo sed -i "31i {\a add_header X-Served-By ${HOSTNAME};" /etc/nginx/sites-enabled/default
+sudo sed -i "31i\ add_header X-Served-By ${HOSTNAME};" /etc/nginx/sites-enabled/default
 service nginx reload
 service nginx restart
