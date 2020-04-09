@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+# Bash script that will display information about subdomains.
+# shellcheck disable=SC2086
+
+print_it(){
+SUB_DOMAIN="$2"
+RECORD_TYPE=$(dig "$1" | awk '/IN/ && $1 !~ /^;/ {print $4}')
+DESTINATION=$(dig "$1" | awk '/IN/ && $1 !~ /^;/ {print $5}')
+echo "The subdomain ${SUB_DOMAIN} is a ${RECORD_TYPE} record and points to ${DESTINATION}"
+}
+
+if [ $# -eq 1 ]; then
+    print_it "www.$1" "www"
+    print_it "lb-01.$1" "lb-01"
+    print_it "web-01.$1" "web-01"
+    print_it "web-02.$1" "web-02"
+else
+    print_it "$2.$1" $2
+fi
